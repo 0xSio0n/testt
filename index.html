@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JBXGP3K8ZV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JBXGP3K8ZV');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starstreet Jewelry</title>
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .navbar{
+	background: #de9898;
+	margin: 0;
+	padding: 3px 25px;
+}
+ 
+.containerbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+ 
+.menu{
+	margin: 0;
+	display: flex;
+	list-style: none;
+	padding: 0;			
+}
+ 
+.menu li{
+	padding-left: 0;
+	margin-right: 10px;
+}
+ 
+.menu li a{
+    font-family: 'Arial, sans-serif' ;
+    font-size: 20px;
+	padding:8px;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+}
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 50px;
+            position: relative;
+        }
+
+        .image {
+            width: 45%;
+            margin: 10px;
+            border: 0px solid #ddd;
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .text {
+            text-align: center;
+            color: #8c704e;
+            width: 100%;
+        }
+
+        .text h1 {
+            font-size: 2.5em;
+            margin: 0.5em 0;
+        }
+
+        .text h2 {
+            font-size: 1.5em;
+            margin: 0.5em 0;
+        }
+
+        .button {
+            margin-top: 20px;
+        }
+
+        .button a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #8c704e;
+            text-decoration: none;
+            border: 2px solid #8c704e;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .button a:hover {
+            background-color: #8c704e;
+            color: #fff;
+        }
+
+        .splatter {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            width: 80%;
+            height: 100%;
+            background: url('splatter.png') no-repeat center;
+            background-size: contain;
+            z-index: -1;
+        }
+
+        .logo {
+            margin: 50px 0;
+        }
+
+        .logo img {
+            width: 900px;
+        }
+
+        .customer-testimonials {
+            margin: 50px 0;
+        }
+
+        .customer-testimonials h3 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .customer-testimonials .testimonials {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .customer-testimonials img {
+            width: 20%;
+            margin: 0 1%;
+            border-radius: 50%;
+        }
+
+        .brand-name {
+            font-size: 3em;
+            color: #8c704e;
+            margin: 20px 0;
+        }
+
+        .brand-tagline {
+            font-size: 1.2em;
+            color: #8c704e;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact img {
+            width: 40%;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+       
+
+
+        .contact-info {
+            text-align: left;
+        }
+
+        .contact-info h2 {
+            color: #8c4e8c;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            font-size: 1em;
+            color: #8c4e8c;
+            margin: 10px 0;
+            
+        }
+
+        .contact-info p i a {
+            margin-right: 10px;
+           
+        }
+
+        .logo-connect img{
+            width: 10%;
+            margin-right: 10px;
+           
+        }
+
+        .logo-connect a {
+            text-decoration: none;
+        }
+
+        
+        .about .row{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            padding: 2rem 0;
+            padding-bottom: 3rem;
+        }
+
+        .about .row .image-container{
+            flex: 1 1 40%;
+            position: relative;
+            text-align: center;
+        }
+
+        .about .row .image-container img{
+            width: 100%;
+            max-width: 400px; /* Adjust as necessary */
+            border: 1.5rem solid #fff;
+            border-radius: .5rem;
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+        }
+
+        .about .row .about-text {
+            flex: 1 1 40%;
+            text-align: left;
+            padding: 1rem;
+        }
+
+        .about .row .about-text p{
+            font-size: 1rem;
+            color: #999;
+            line-height: 1.5;
+            margin: 0.5rem 0;
+        }
+
+
+    
+        
+        
+        .logo-gaya img{
+            width: 40%;
+            margin-right: 90px;
+           
+        }
+        
+        @media (max-width: 768px) {
+            .containerbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .menu {
+                flex-direction: column;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .menu li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .customer-testimonials img {
+                width: 40%;
+                margin: 0 5%;
+            }
+
+            .about .row {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about .row .image-container, .about .row .about-text {
+                flex: 1 1 100%;
+                padding: 1rem;
+            }
+
+            .contact {
+                flex-direction: column;
+            }
+
+            .contact img {
+                width: 20%;
+                margin: 0 0 10px 0;
+            }
+
+            .contact-info {
+                text-align: center;
+            }
+
+            .logo-gaya img {
+                width: 60%;
+                margin: 0 auto 20px;
+            }
+        	a {
+  			text-align: center;
+			}
+
+			img, span {
+  			display: inline-block;
+  			vertical-align: middle;
+			}
+
+			span {
+  			margin-left: 5px; 
+}
+      		i.fa-phone {
+        	font-size: 2em;
+      		}
+
+            
+        	}
+
+        @media (max-width: 480px) {
+            .text h1 {
+                font-size: 1.8em;
+            }
+
+            .text h2 {
+                font-size: 1.2em;
+            }
+
+            .brand-name {
+                font-size: 2em;
+            }
+
+            .contact-info h2 {
+                font-size: 1.5em;
+            }
+
+            .button a {
+                padding: 8px 16px;
+                font-size: 0.9em;
+            }
+
+            .customer-testimonials img {
+                width: 80%;
+                margin: 10px 0;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+		<div class="containerbar">
+            <h2 style="color: #ffffff; font-weight: bold; font-size: 28px;">Little Sparks</h2>
+			<ul class="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Bracelets</a></li>
+				<li><a href="#">Necklaces</a></li>
+				<li><a href="#">Rings</a></li>
+				<li><a href="#">Our Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+    <div class="container">
+        <div class="logo">
+            <img src="assets/l.png" alt="Brand Logo" style="max-width:100%;height:auto;">
+        </div>
+        
+        <div class="text">
+            <h2 style="font-size: 50px;">Handmade Jewelry</h2>
+            <h1>New Collection</h1>
+            <div class="button">
+                <a href="#">Show More</a>
+            </div>
+
+            <br><br><br><br>
+        
+
+    <div class="customer-testimonials">
+        <h3>Special For You</h3>
+        <div class="testimonials">
+            <img src="assets/g2.jpeg" alt="Customer Testimonial 1" media="(max-width: 600px)">
+            <img src="assets/s.jpeg" alt="Customer Testimonial 2" media="(max-width: 600px)">
+            <img src="assets/g4.jpeg" alt="Customer Testimonial 3" media="(max-width: 600px)">
+            <img src="assets/g5.jpeg" alt="Customer Testimonial 4" media="(max-width: 600px)">
+        </div>
+    </div>
+
+    <div class="brand-name">
+        Little Sparks
+    </div>
+
+    <section class="about" id="about">
+
+        <div class="row">
+
+            <div class="image-container">
+                <img src="assets/logo6.jpeg" alt="logo3">
+            </div>
+   
+            <div class="about-text">
+                <p>Aksesoris wanita motif keren!!</p>
+                <p>Aksesoris wanita aesthetic dengan motif yang unik.</p>
+                <p>Yang dibuat dengan bahan berkualitas yang bermacam ragam.</p>
+                <p>Cocok digunakan untuk hadiah kencan, liburan, perjalanana, belanja, pesta, lebaran,
+                <p>Dengan keanggunan yang modis, koleksi beads kami dari produk Jewelry StarStreet menggambarkan keanggunan dan
+            <p>Setiap beads dirancang secara detail untuk menonjolkan gaya Anda yang unik dan meningkatkan setiap ansambel.</p>
+            <p>Temukan daya tarik keindahan abadi dengan koleksi kami saat ini</p>
+            
+            <p>Jelajahi koleksi kami di LittleSparks dan temukan aksesori sempurna yang melengkapi gaya Anda.</p>
+        </div>
+    </div>
+</section>
+
+    <div class="brand-tagline">
+        <h3>Made With Love</h3>
+    </div>
+
+    <div class="contact">
+        <div class="logo-gaya">
+            <img src="assets/l.png" alt="Buat gayamu makin oke!!" media="(max-width: 600px)">
+        </div>
+        <div class="contact-info">
+            <h2>Let's connect!</h2>
+            <div class="logo-connect">
+            <a href="https://www.tiktok.com/@littlesparksjogja?_t=8nAEe5jge6J&_r=1">
+      		<img src="assets/logo1.png" alt="Tiktok">
+      		<i class="fa fa-phone"></i>
+     			 littleSparks
+    		</a>
+            <p>
+            <a href="https://www.instagram.com/__littlesparks?igsh=bGNpeml0ejFlcG9v">
+       		<img src="assets/logo2.jpeg" alt="Instagram">
+            <i class="fa fa-phone" media="(max-width: 600px)">
+            </i> __littlesparks</a>
+         	</p>
+        
+        </div>
+    </div>
+</body>
+</html>
